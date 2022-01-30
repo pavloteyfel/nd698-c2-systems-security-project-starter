@@ -1,11 +1,6 @@
-/home/ubuntu/Downloads/moni.lod: OK
-/home/ubuntu/Downloads/notes.txt: OK
-/home/ubuntu/Downloads/SSH-One: OK
-/home/ubuntu/Downloads/gates.lod: OK
-/home/ubuntu/Downloads/ft32: Unix.Malware.Agent-6774375-0 FOUND
-/home/ubuntu/Downloads/ft64: Unix.Malware.Agent-6774336-0 FOUND
-/home/ubuntu/Downloads/wipefs: Unix.Tool.Miner-6443173-0 FOUND
-/home/ubuntu/Downloads/tmplog: OK
+./ft32: Unix.Malware.Agent-6774375-0 FOUND
+./ft64: Unix.Malware.Agent-6774336-0 FOUND
+./wipefs: Unix.Tool.Miner-6443173-0 FOUND
 
 ----------- SCAN SUMMARY -----------
 Known viruses: 8874078
@@ -15,4 +10,4 @@ Scanned files: 8
 Infected files: 3
 Data scanned: 2.42 MB
 Data read: 2.40 MB (ratio 1.01:1)
-Time: 45.481 sec (0 m 45 s)
+Time: 35.820 sec (0 m 35 s)

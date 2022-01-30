@@ -1,8 +1,11 @@
 # provide the additional filename that you have identified as a potentially suspicious file. Also provide details about the Command and control Domain which is hardcoded inside this file. 
+I found a bash file that erases all firewall rules, stops the firewall and turns it off completely.
+It modified the /etc/rc.local file to run the /tmp/SSH-T & SSH-One files after the systems starts.
 
 # Filename
+SSH-One
 
 
 # Callout domain
-
+http://darkl0rd.com
  
