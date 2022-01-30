@@ -1,11 +1,15 @@
 #Provide the apache version and configuration lines to be changed 
-
+I chekced the apache version with `apache2 -v` command
+In the /etc/apache2/conf-enabled/security.conf file we need to change 2 configuration parameters to hide version number and Os information.
+The ServerTokens directive controls whether Server response header field which is sent back to clients includes the generic OS details.
+The ServerSignature configures the footer on server-generated documents. 
 
 # Apache Version
-
-
+Server version: Apache/2.4.7 (Ubuntu)
+Server built:   Apr  3 2019 18:04:59
 
 # Configuration file change(Hint: the change has to be made in /etc/apache2/conf-enabled/security.conf)
-
-
+1.) Set the following parameters in the security.conf file:
+ServerTokens Prod
+ServerSignature Off
 

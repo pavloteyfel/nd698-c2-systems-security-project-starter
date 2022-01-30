@@ -2,6 +2,15 @@
 
 
 #Configuration lines:
+1.) Create user and group
+$ sudo useradd apache-user
+$ sudo passwd apache-user
+$ sudo groupadd apache-group
+$ sudo usermod -g apache-group apache-user
 
+2.) edit the /etc/apache2/envvars and set the following lines in it to the newly created user and group:
+export APACHE_RUN_USER=apache-user
+export APACHE_RUN_GROUP=apache-group
 
-
+3.) restart the server
+$ sudo service apache2 restart
