@@ -1,0 +1,5 @@
+- Limit the login tries to max 3 attempts though the ssh. This can prevent brute force attacks.
+- Configure SSH keys for login instead of passwords can make it even more difficult for attackers to brute force login credentials. Disable password-based access and instead generate public keys on the client machines and add them to the server.
+- Define a list of permitted users. By doing this, you ensure that any other user is not able to log into the server even if it belongs to the same access group as other users in the list.
+- Change the default port of the SSH service. This can help deflect automated bots and scanners who are looking for open port 22 randomly on the internet to brute force login credentials.
+- Use multi-factor authentication (MFA) can be another way of further securing the client-server authentication. 

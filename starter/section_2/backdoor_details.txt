@@ -1,12 +1,19 @@
 # Provide the backdoor entries created by the nation state attackers. 
+From OSSEC it can be seen that the ubuntu user after a multiple unsuccessful login attempts has successfully
+logged in, changed UID to root and created a new user named "darklord".
+
+With `netstat -antp` I found a suspicious port listening > 0.0.0.0:56565 
+Among the running processes I saw the /tmp/remotesec -k -l 56565 process that was started by the root user.
+Also found this login row in auth.log: 
+Sep 21 22:25:04 ubuntu-VirtualBox sudo:   ubuntu : TTY=pts/0 ; PWD=/tmp/ssh-Q5lxMMDFckma ; USER=root ; COMMAND=/usr/bin/find . /home/ubuntu/ remotesec
 
 # Rouge Username
-
+darklord
 
 # Backdoor process name
-
+/tmp/remotesec
 
 # Backdoor port number the above process is listening on
-
+56565
 
 
